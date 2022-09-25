@@ -62,7 +62,7 @@
             label = "Base";
             bindings = <
 #ifdef QWERTY_BASE
- &gresc    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp BKSP
+ &gresc     &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp BKSP
  &kp TAB    &kp A      &kp S      &kp D       &kp F          &kp G          &kp H            &kp J          &kp K       &kp L      &kp SEMI      &kp QUOT
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &mt RSHFT RET
 #else
@@ -83,9 +83,9 @@
         nav_layer {
             label = "Nav";
             bindings = <
-&bt BT_CLR &kp PG_DN     &kp UARW     &PG_UP      &trans          &trans       &trans     &trans         &trans      &trans     &trans     &trans
-&kp CAPS    &kp LARW     &kp DARW     &kp RARW     &trans          &trans       &trans     &trans       &trans    &trans   &trans   &trans
-&bt BT(0)  &bt BT(1)  &bt BT(2) &bt BT(3)    &bt BT(4)       &trans       &trans     &trans       &trans   &trans  &trans    &trans
+&bt BT_CLR &kp PG_DN  &kp UARW  &PG_UP      &trans          &trans       &trans     &trans       &trans     &trans     &trans     &trans
+&kp CAPS   &kp LARW   &kp DARW  &kp RARW    &trans          &trans       &trans     &trans       &trans     &trans     &trans     &trans
+&bt BT(0)  &bt BT(1)  &bt BT(2) &bt BT(3)   &bt BT(4)       &trans       &trans     &trans       &trans     &trans     &trans     &trans
 #ifdef TBLE_DUAL_2U
                       &trans     &trans              &trans                    &trans       &trans         &trans
 #elif defined(TBLE_MIT)
