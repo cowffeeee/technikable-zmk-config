@@ -50,8 +50,15 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp DEL>, <&kp INS>;
+        };
+	td_mt: tap_dance_mod_tap {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_MOD_TAP";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mt LGUI TAB>, <&kp CAPS>;
         };
     };
 
@@ -75,7 +82,7 @@
 #elif defined(TBLE_MIT)
                        &kp LCTRL  &kp LALT    &mo NAV_L          &kp SPACE                   &mo NUM_L      &kp RALT    &kp RCTRL
 #else
-                       &kp LCTRL  &kp LALT    &mo NAV_L      &kp SPACE      &kp SPACE        &mo NUM_L      &kp RALT    &kp LGUI
+                       &kp LCTRL  &kp LALT    &lt NAV_L SPACE    &kp SPACE      &kp SPACE        &mo NUM_L      &kp RALT    &kp LGUI
 #endif
             >;
         };
