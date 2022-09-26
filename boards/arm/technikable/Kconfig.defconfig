@@ -27,5 +27,7 @@ config ZMK_BLE
 
 config ZMK_USB
 	default y
+	
+config BT_CTLR_TX_PWR_PLUS_8=y
 
 endif # BOARD_TECHNIKABLE
