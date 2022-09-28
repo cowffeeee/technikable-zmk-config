@@ -78,7 +78,7 @@
 	    tap-ms = <40>;
             bindings
                 = <&macro_press &kp LGUI>
-                , <&macro_tap &kp tab>
+                , <&macro_tap &kp TAB>
                 , <&macro_release &kp LGUI>
                 ;
         };
