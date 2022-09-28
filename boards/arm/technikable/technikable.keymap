@@ -60,6 +60,28 @@
             tapping-term-ms = <150>;
             bindings = <&mt LGUI TAB>, <&kp CAPS>;
         };
+	altcmdtab: alt_command_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALTCMDTAB";
+            #binding-cells = <0>;
+            bindings = <&td_mt>, <&alt_tab>;
+            mods = <(MOD_LALT, MOD_LCTRL)>;
+        };
+    };
+    
+    macros {
+        alt_tab: alt_tab {
+            label = "ZM_alt_tab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+	    wait-ms = <40>;
+	    tap-ms = <40>;
+            bindings
+                = <&macro_press &kp LGUI>
+                , <&macro_tap &kp tab>
+                , <&macro_release &kp LGUI>
+                ;
+        };
     };
 
     keymap {
