@@ -65,7 +65,7 @@
             label = "ALTCMDTAB";
             #binding-cells = <0>;
             bindings = <&td_mt>, <&alt_tab>;
-            mods = <(MOD_LALT, MOD_LCTRL)>;
+            mods = <(MOD_LALT)>;
         };
     };
     
